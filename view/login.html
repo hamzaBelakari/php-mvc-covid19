@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Login</title>
+    <style>
+        .login{
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(3, 78, 177);
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+        .titre{
+            color: white;
+            padding-top: 50px;
+        }
+        .submit{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="login container">
+        <h2 class=" titre text-center">Connexion</h2>
+        <form method="post" action="../controller/utilisateur-controller.php?action=login">
+           <div> <h3>Email :</h3></div> 
+            <input type="text" class="form-control" placeholder="example@home.com" name="email" /> 
+            <div class="text-block"> <h3>Mot de Passe:</h3> </div>
+            <input type="password" class="form-control" placeholder="********" name="password" />
+            <button type="submit" class="submit btn btn-info btn-block">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
